@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 230px 10% 30px; /* это идет как "сверху" "по бокам" "снизу"  */
+    text-align: left;
+}
+
+#greeting {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+}
+
+#introduction {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+    line-height: 1.2;
+}
+
+nav {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style-type: none; /* убираем жирные точки  */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* делаем в одну линию  */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease; /* это скорость ховера  */
+}
+
+nav ul li a:hover {
+    color: #555555;
+}
+
+/* для основного содержимого */
+main {
+    padding: 20px 8%; /* это "сверху-снизу" и "по бокам"  */
+}
+
+section {
+    margin: 20px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+/* для формы подписки */
+#subscribe form {
+    display: flex;
+    margin-top: 20px;
+}
+
+#subscribe input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#subscribe button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer; /* тут создается кликабельность  */
+    transition: background-color 0.3s ease;
+}
+
+#subscribe button:hover {
+    background-color: #333333;
+}
+
+/* Стили для изображений */
+.image-section {
+    float: right;
+    margin-right: 55px;
+    margin-top: -55px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для блоков с серым фоном */
+#timeline, #projects {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Стили для текста */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid #cccccc;
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 10%;
+    margin-top: 40px;
+}
+
+#ai-help button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ai-help button:hover {
+    background-color: #333333;
+}
+
+/* для кода и ASCII */
+pre {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 4px;
+}
