@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table_generator_styles.css">
+    <script src="js/pageLoadTime.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="timeline.html">AI Timeline</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="table_generator.html" class="active">Schedule Generator</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="schedule-generator">
+        <h1>Class Schedule Generator</h1>
+        <form id="schedule-form">
+            <div class="form-group">
+                <label for="days">Number of days:</label>
+                <select id="days" name="days" required>
+                    <option value="5">5 days</option>
+                    <option value="6">6 days</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="maxClasses">Maximum classes per day:</label>
+                <input type="number" id="maxClasses" name="maxClasses" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+                <label for="language">Language:</label>
+                <select id="language" name="language" required>
+                    <option value="en">English</option>
+                    <option value="ru">Russian</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Generate Schedule</button>
+            </div>
+        </form>
+    </section>
+
+    <div id="schedule-result"></div>
+    <button id="fetch-data-btn">Fetch To-Do Data</button>
+
+</main>
+<footer>
+    <p id="load-time"></p>
+    <p id="contact">Contact Information:</p>
+    <ul>
+        <li>Email: <a href="mailto:egordr0433@gmail.com">egordr0433@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.google.com">AI George</a></li>
+    </ul>
+</footer>
+<script src="js/schedule-generator.js"></script>
+</body>
+</html>
