@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 20px;
-    align-items: flex-end; /* Выравнивание элементов по нижнему краю */
+    align-items: flex-end; /* по нижнему краю */
 }
 
 .form-group {
@@ -36,7 +36,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    align-self: flex-end; /* Выравнивание кнопки по нижнему краю */
+    align-self: flex-end; /* кнопку по нижнему краю ставим */
 }
 
 
