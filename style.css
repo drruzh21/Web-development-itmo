@@ -259,7 +259,7 @@ pre {
 
     .table-container {
         display: grid;
-        grid-template-columns: 1fr; /* одна колонка */
+        grid-template-columns: 1fr; /* теперь одна колонка */
         gap: 10px; /* пространство между строками */
     }
 
@@ -272,7 +272,7 @@ pre {
         border-radius: 8px; /* закругления */
     }
 
-    .table-cell:first-child { /* заголовки делаем жирным */
+    .table-cell:first-child {
         font-weight: bold;
     }
 
@@ -292,10 +292,10 @@ pre {
 
 @media screen and (max-width: 480px) {
     #greeting {
-        font-size: 1.5em; /* Еще меньший размер шрифта для мобильных */
+        font-size: 1.5em;
     }
 
     #introduction {
-        font-size: 2em; /* Еще меньший размер шрифта для мобильных */
+        font-size: 2em;
     }
 }
